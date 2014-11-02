@@ -13,12 +13,7 @@ import pdb
 import subprocess
 import struct
 import pickle
-
-
-#
-# LFISH_ABSPATH must be correctly set!!!
-#
-LFISH_ABSPATH = '/home/user/github/lfish/lfish.py'
+import config
 
 
 #def _my_excepthook(type, value, tb):
@@ -98,7 +93,7 @@ class WorkerBase(object):
 
     def _spawn_server(self):
         p = None
-        args = [LFISH_ABSPATH, '--worker']
+        args = [config.LFISH_ABSPATH, '--worker']
         if DEBUG:
             args.append('--debug')
         env = os.environ.copy()

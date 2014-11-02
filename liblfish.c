@@ -29,8 +29,6 @@
 #include "debug.h"
 
 
-#define LFISH_ROOT "/home/user/github/lfish"
-
 typedef int (*orig_open_f_type)(const char*, int, ...);
 typedef FILE  *(*orig_fopen_f_type)(const char*, const char*);
 
