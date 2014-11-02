@@ -1,0 +1,11 @@
+*.py[cod]
+*.sw?
+*.so
+*.C
+testopen
+*~
+.DS_Store
+.bundle
+.ropeproject
+build
+tags
